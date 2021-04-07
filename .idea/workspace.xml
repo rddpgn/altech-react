@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="74dd15f6-ad7e-48df-948a-da5052573d5f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/components/header/Header.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/header/Header.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/static_data/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static_data/static_data_interfaces/ISiteMapNode.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/header/Header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/header/Header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static_data/config.json" beforeDir="false" afterPath="$PROJECT_DIR$/static_data/config.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,6 +19,7 @@
       <list>
         <option value="TypeScript JSX File" />
         <option value="CSS File" />
+        <option value="TypeScript File" />
       </list>
     </option>
   </component>
@@ -68,7 +69,7 @@
       <updated>1616150215194</updated>
       <workItem from="1616150217107" duration="216000" />
       <workItem from="1617717464586" duration="650000" />
-      <workItem from="1617794229733" duration="8522000" />
+      <workItem from="1617794229733" duration="13392000" />
     </task>
     <servers />
   </component>

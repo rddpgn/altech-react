@@ -3,9 +3,10 @@ import styles from '../styles/Home.module.css'
 import {GetStaticPropsResult, NextPageContext} from "next";
 import fs from 'fs';
 import path from 'path';
+import ISiteMapNode from "../static_data/static_data_interfaces/ISiteMapNode";
 
 interface staticProps {
-    navLinks: Array<string>
+    siteMap: ISiteMapNode
 }
 
 function readConfig() {
@@ -21,14 +22,14 @@ export async function getStaticProps(context:NextPageContext):Promise<GetStaticP
     const config = await readConfig();
     return {
         props: {
-           navLinks: config['navLinks'],
+            siteMap: config['siteMap'],
         }
     }
 }
 
 export default function Main(props) {
   return (
-      <Header navLinks = {props.navLinks}/>
+      <Header siteMap = {props.siteMap}/>
       )
 }
 
