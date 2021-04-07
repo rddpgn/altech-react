@@ -1,6 +1,38 @@
-import Head from 'next/head'
+import Header from "../components/header/Header";
 import styles from '../styles/Home.module.css'
+import {GetStaticPropsResult, NextPageContext} from "next";
+import fs from 'fs';
+import path from 'path';
 
+interface staticProps {
+    navLinks: Array<string>
+}
+
+function readConfig() {
+    return new Promise((resolve, reject) => {
+        fs.readFile(path.join(process.cwd(), 'static_data/config.json'), 'utf8', (err, data) => {
+            if (err) return reject(err);
+            resolve(JSON.parse(data));
+        });
+    });
+}
+
+export async function getStaticProps(context:NextPageContext):Promise<GetStaticPropsResult<staticProps>> {
+    const config = await readConfig();
+    return {
+        props: {
+           navLinks: config['navLinks'],
+        }
+    }
+}
+
+export default function Main(props) {
+  return (
+      <Header navLinks = {props.navLinks}/>
+      )
+}
+
+/*
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -62,4 +94,4 @@ export default function Home() {
       </footer>
     </div>
   )
-}
+}*/;
